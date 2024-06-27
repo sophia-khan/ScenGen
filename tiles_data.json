@@ -1,0 +1,643 @@
+[
+    {
+        "tile_name": "Rocky_Mountains_USA_10_211_390.png",
+        "caption": "Caption using beam search:\na map showing the location of a river in california\n\nCaptions using nucleus sampling:\na map showing the location of a river in california\na map showing the location of a river\na map of the california national forest",
+        "landmarks": [
+            "river",
+            "forest"
+        ]
+    },
+    {
+        "tile_name": "Rocky_Mountains_USA_10_211_389.png",
+        "caption": "Caption using beam search:\na map showing the location of a hiking trail\n\nCaptions using nucleus sampling:\na map showing the location of a hiking trail\na map showing the location of a hiking trail\na map showing the location of a hiking trail",
+        "landmarks": [
+            "trail"
+        ]
+    },
+    {
+        "tile_name": "Rocky_Mountains_USA_10_212_391.png",
+        "caption": "Caption using beam search:\na map showing the location of a lake\n\nCaptions using nucleus sampling:\na map showing the location of a lake and a river\na map showing the location of a lake\na map showing the location of a lake",
+        "landmarks": [
+            "river",
+            "lake"
+        ]
+    },
+    {
+        "tile_name": "Rocky_Mountains_USA_10_212_390.png",
+        "caption": "Caption using beam search:\na map showing the location of a lake in california\n\nCaptions using nucleus sampling:\na map showing the location of a lake in california\na map showing the location of a lake in california\na map showing the location of a lake",
+        "landmarks": [
+            "lake"
+        ]
+    },
+    {
+        "tile_name": "Rocky_Mountains_USA_10_211_393.png",
+        "caption": "Caption using beam search:\na map showing the location of a hiking trail\n\nCaptions using nucleus sampling:\na map showing the location of a mountain\na map of the yosemite national park\na map showing the location of a river and a mountain",
+        "landmarks": [
+            "mountain",
+            "river",
+            "trail"
+        ]
+    },
+    {
+        "tile_name": "Rocky_Mountains_USA_10_212_393.png",
+        "caption": "Caption using beam search:\na map showing the location of a lake\n\nCaptions using nucleus sampling:\na map showing the location of a lake\na map showing the location of a lake\na map showing the location of a lake",
+        "landmarks": [
+            "lake"
+        ]
+    },
+    {
+        "tile_name": "Rocky_Mountains_USA_10_212_392.png",
+        "caption": "Caption using beam search:\na map showing the location of oregon creek\n\nCaptions using nucleus sampling:\na map showing the location of a lake\na map showing the location of a lake\na map showing the location of a lake",
+        "landmarks": [
+            "lake"
+        ]
+    },
+    {
+        "tile_name": "Rocky_Mountains_USA_10_211_391.png",
+        "caption": "Caption using beam search:\na map showing the location of a lake\n\nCaptions using nucleus sampling:\na map showing the location of a lake\na map showing the location of a lake\na map showing the location of a lake",
+        "landmarks": [
+            "lake"
+        ]
+    },
+    {
+        "tile_name": "Rocky_Mountains_USA_10_212_389.png",
+        "caption": "Caption using beam search:\na map showing the location of a hiking trail\n\nCaptions using nucleus sampling:\na map showing the location of a park\na map showing the location of a hiking trail\na map showing the location of a hiking trail",
+        "landmarks": [
+            "trail"
+        ]
+    },
+    {
+        "tile_name": "Rocky_Mountains_USA_10_211_392.png",
+        "caption": "Caption using beam search:\na map showing the location of a national park\n\nCaptions using nucleus sampling:\na map of the yosemite national park in california\na map showing the location of the national park\na map showing the location of a national park",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Swiss_Alps_Switzerland_10_535_360.png",
+        "caption": "Caption using beam search:\na map showing the location of a lake in switzerland\n\nCaptions using nucleus sampling:\na map showing the location of a lake in switzerland\na map of switzerland showing the location of the lake\na map of switzerland showing the location of a lake",
+        "landmarks": [
+            "lake"
+        ]
+    },
+    {
+        "tile_name": "Swiss_Alps_Switzerland_10_536_360.png",
+        "caption": "Caption using beam search:\na map showing the location of a lake in switzerland\n\nCaptions using nucleus sampling:\na map showing the location of a lake in switzerland\na map showing the location of a lake in switzerland\na map showing the location of a lake in switzerland",
+        "landmarks": [
+            "lake"
+        ]
+    },
+    {
+        "tile_name": "Swiss_Alps_Switzerland_10_536_361.png",
+        "caption": "Caption using beam search:\na map showing the location of a hiking trail\n\nCaptions using nucleus sampling:\na map showing the location of a hiking trail\na map showing the location of a hiking trail\na map showing the location of a hiking trail",
+        "landmarks": [
+            "trail"
+        ]
+    },
+    {
+        "tile_name": "Swiss_Alps_Switzerland_10_535_363.png",
+        "caption": "Caption using beam search:\na map of the swiss alps\n\nCaptions using nucleus sampling:\na map of the swiss alps\na map showing the location of switzerland\na map showing the location of a lake in switzerland",
+        "landmarks": [
+            "lake"
+        ]
+    },
+    {
+        "tile_name": "Swiss_Alps_Switzerland_10_535_362.png",
+        "caption": "Caption using beam search:\na map showing the location of a hiking trail\n\nCaptions using nucleus sampling:\na map showing the location of a hiking trail\na map showing the location of a hiking trail\na map showing the location of a hiking trail",
+        "landmarks": [
+            "trail"
+        ]
+    },
+    {
+        "tile_name": "Swiss_Alps_Switzerland_10_535_364.png",
+        "caption": "Caption using beam search:\na map showing the location of a mountain\n\nCaptions using nucleus sampling:\na map showing the location of a mountain\na map showing the location of a mountain\na map showing the location of a mountain",
+        "landmarks": [
+            "mountain"
+        ]
+    },
+    {
+        "tile_name": "Swiss_Alps_Switzerland_10_535_361.png",
+        "caption": "Caption using beam search:\na topographic map of the swiss alps\n\nCaptions using nucleus sampling:\na topographic map of the swiss alps\na topographic map of the swiss alps\na topographic map of the swiss alps",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Swiss_Alps_Switzerland_10_536_363.png",
+        "caption": "Caption using beam search:\na map showing the location of a lake\n\nCaptions using nucleus sampling:\na map showing the location of a lake\na map showing the location of a lake\na map showing the location of a lake",
+        "landmarks": [
+            "lake"
+        ]
+    },
+    {
+        "tile_name": "Amazon_River_Brazil_10_335_521.png",
+        "caption": "Caption using beam search:\na map showing the location of a river\n\nCaptions using nucleus sampling:\na map with a river in the middle\na map with a green hexagon on it\na map with a green hexagon in the middle",
+        "landmarks": [
+            "river"
+        ]
+    },
+    {
+        "tile_name": "Amazon_River_Brazil_10_335_522.png",
+        "caption": "Caption using beam search:\na map showing the location of a river\n\nCaptions using nucleus sampling:\na map showing the location of a river\na map showing the location of a river\na map showing the location of a river",
+        "landmarks": [
+            "river"
+        ]
+    },
+    {
+        "tile_name": "Amazon_River_Brazil_10_335_523.png",
+        "caption": "Caption using beam search:\na map showing the location of a river\n\nCaptions using nucleus sampling:\na map showing the location of a river\na map showing the location of a river\na map showing the location of a river",
+        "landmarks": [
+            "river"
+        ]
+    },
+    {
+        "tile_name": "Swiss_Alps_Switzerland_10_536_362.png",
+        "caption": "Caption using beam search:\na map showing the location of a lake\n\nCaptions using nucleus sampling:\na map showing the location of a lake\na map showing the location of a lake\na map showing the location of a lake",
+        "landmarks": [
+            "lake"
+        ]
+    },
+    {
+        "tile_name": "Amazon_River_Brazil_10_335_525.png",
+        "caption": "Caption using beam search:\na map showing the location of a river\n\nCaptions using nucleus sampling:\na map showing the location of the niagara falls\na map showing the location of a river\na map showing the location of a river",
+        "landmarks": [
+            "river"
+        ]
+    },
+    {
+        "tile_name": "Amazon_River_Brazil_10_335_524.png",
+        "caption": "Caption using beam search:\na map showing the location of a river\n\nCaptions using nucleus sampling:\na map showing the location of a river\na map showing the location of a river\na map showing the location of a river",
+        "landmarks": [
+            "river"
+        ]
+    },
+    {
+        "tile_name": "Swiss_Alps_Switzerland_10_536_364.png",
+        "caption": "Caption using beam search:\na map showing the location of a lake\n\nCaptions using nucleus sampling:\na map showing the location of a lake\na map showing the location of a lake\na map showing the location of a lake",
+        "landmarks": [
+            "lake"
+        ]
+    },
+    {
+        "tile_name": "New_York_City_USA_10_301_385.png",
+        "caption": "Caption using beam search:\na map showing the location of new york city\n\nCaptions using nucleus sampling:\na map showing the location of new york city\na map showing the location of new york city\na map showing the location of new york city",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Amazon_River_Brazil_10_336_522.png",
+        "caption": "Caption using beam search:\na map showing the location of a river\n\nCaptions using nucleus sampling:\na map showing the location of a river\na map showing the location of a river\na map showing the location of a river",
+        "landmarks": [
+            "river"
+        ]
+    },
+    {
+        "tile_name": "Amazon_River_Brazil_10_336_523.png",
+        "caption": "Caption using beam search:\na map showing the location of a river\n\nCaptions using nucleus sampling:\na map showing the location of a river\na map showing the location of a river\na map showing the location of a river",
+        "landmarks": [
+            "river"
+        ]
+    },
+    {
+        "tile_name": "Amazon_River_Brazil_10_336_524.png",
+        "caption": "Caption using beam search:\na map showing the location of a river\n\nCaptions using nucleus sampling:\na map of the location of the river kansas\na map showing the location of a river\na map of the kansas river",
+        "landmarks": [
+            "river"
+        ]
+    },
+    {
+        "tile_name": "Amazon_River_Brazil_10_336_521.png",
+        "caption": "Caption using beam search:\na map showing the location of a lake\n\nCaptions using nucleus sampling:\na map showing the location of a lake\na map showing the location of a lake\na map showing the location of the lake",
+        "landmarks": [
+            "lake"
+        ]
+    },
+    {
+        "tile_name": "Amazon_River_Brazil_10_336_525.png",
+        "caption": "Caption using beam search:\na green map showing the location of a river\n\nCaptions using nucleus sampling:\na map showing the location of a lake\na green map showing the location of a river\na map showing the location of a lake",
+        "landmarks": [
+            "river",
+            "lake"
+        ]
+    },
+    {
+        "tile_name": "New_York_City_USA_10_301_386.png",
+        "caption": "Caption using beam search:\na map showing the location of a town\n\nCaptions using nucleus sampling:\na map showing the location of a town\na map showing the location of a town in new jersey\na map showing the location of a town",
+        "landmarks": []
+    },
+    {
+        "tile_name": "New_York_City_USA_10_301_387.png",
+        "caption": "Caption using beam search:\na map showing the location of a beach in north carolina\n\nCaptions using nucleus sampling:\na map showing the location of a beach in north carolina\na map showing the location of a beach in north carolina\na map showing the location of a beach in north carolina",
+        "landmarks": []
+    },
+    {
+        "tile_name": "New_York_City_USA_10_302_388.png",
+        "caption": "Caption using beam search:\nan airplane flying over a blue background\n\nCaptions using nucleus sampling:\na blue background with a white airplane flying in the sky\na blue background with a picture of a plane flying in the sky\na blue background with a person flying in the sky",
+        "landmarks": []
+    },
+    {
+        "tile_name": "New_York_City_USA_10_302_389.png",
+        "caption": "Caption using beam search:\nan image of a blue sky with a plane flying over it\n\nCaptions using nucleus sampling:\na blue background with a white airplane flying in the sky\na blue background with a white airplane flying over it\na blue background with a white airplane flying in the sky",
+        "landmarks": []
+    },
+    {
+        "tile_name": "New_York_City_USA_10_302_386.png",
+        "caption": "Caption using beam search:\na map of the state of california on a blue background\n\nCaptions using nucleus sampling:\na map of the united states with a blue background\na map of the united states with a blue background\na map of the united states with the outline of a state",
+        "landmarks": []
+    },
+    {
+        "tile_name": "New_York_City_USA_10_301_388.png",
+        "caption": "Caption using beam search:\na map showing the location of a beach in california\n\nCaptions using nucleus sampling:\na map showing the location of a beach\na map showing the location of a beach\na map showing the location of a beach",
+        "landmarks": []
+    },
+    {
+        "tile_name": "New_York_City_USA_10_301_389.png",
+        "caption": "Caption using beam search:\na map showing the location of a boat\n\nCaptions using nucleus sampling:\na map showing the location of a boat\na map showing the location of a boat\na map showing the location of a boat",
+        "landmarks": []
+    },
+    {
+        "tile_name": "New_York_City_USA_10_302_385.png",
+        "caption": "Caption using beam search:\na map showing the location of a beach\n\nCaptions using nucleus sampling:\na map showing the location of a beach\na map of the area with a beach in the middle\na map showing the location of a beach",
+        "landmarks": []
+    },
+    {
+        "tile_name": "New_York_City_USA_10_302_387.png",
+        "caption": "Caption using beam search:\nan image of a blue sky with a plane flying over it\n\nCaptions using nucleus sampling:\na map of the world with a blue background\na blue background with a person in the middle of it\na blue background with a white arrow in the middle",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Tokyo_Japan_10_909_404.png",
+        "caption": "Caption using beam search:\na map showing the location of yokohama\n\nCaptions using nucleus sampling:\na map showing the location of yokohama\na map showing the location of yokohama\na map showing the location of yokohama",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Tokyo_Japan_10_910_403.png",
+        "caption": "Caption using beam search:\na map showing the location of hong kong\n\nCaptions using nucleus sampling:\na map showing the location of hong kong\na map showing the location of hong kong\na map showing the location of the port of shanghai",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Tokyo_Japan_10_909_406.png",
+        "caption": "Caption using beam search:\na blue background with lines on it\n\nCaptions using nucleus sampling:\nan image of a plane flying over a blue background\na blue background with a line on it\na blue background with lines on it",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Tokyo_Japan_10_910_404.png",
+        "caption": "Caption using beam search:\na map showing the location of a city in japan\n\nCaptions using nucleus sampling:\na map of a city in japan\na map showing the location of a city in japan\na map showing the location of a city in japan",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Tokyo_Japan_10_909_403.png",
+        "caption": "Caption using beam search:\na map showing the location of tokyo\n\nCaptions using nucleus sampling:\na map showing the location of tokyo\na map of tokyo showing the location of the city\na map showing the location of tokyo",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Tokyo_Japan_10_909_407.png",
+        "caption": "Caption using beam search:\na drawing of a triangle on a blue background\n\nCaptions using nucleus sampling:\na drawing of a plane on a blue background\na drawing of a triangle on a blue background\na blue background with a drawing of a triangle on it",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Tokyo_Japan_10_909_405.png",
+        "caption": "Caption using beam search:\na map showing the location of a city in spain\n\nCaptions using nucleus sampling:\na map showing the location of a beach in spain\na map showing the location of spain\na map showing the location of a city in spain",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Sydney_Australia_10_942_617.png",
+        "caption": "Caption using beam search:\nan image of a blue sky with a plane flying over it\n\nCaptions using nucleus sampling:\na blue background with a white airplane flying in the sky\na blue background with a white airplane flying in the sky\na blue background with a white airplane flying over it",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Sydney_Australia_10_942_614.png",
+        "caption": "Caption using beam search:\na map showing the location of sydney\n\nCaptions using nucleus sampling:\na map showing the location of sydney\na map showing the location of sydney\na map showing the location of sydney",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Sydney_Australia_10_942_616.png",
+        "caption": "Caption using beam search:\na blue map with a person in the middle of it\n\nCaptions using nucleus sampling:\na map of the world with a blue background\na blue map with a person on it\na blue background with a person standing on top of it",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Sydney_Australia_10_942_615.png",
+        "caption": "Caption using beam search:\na map showing the location of a boat in the ocean\n\nCaptions using nucleus sampling:\na map showing the location of a boat in the ocean\na map showing the location of a ship in the ocean\na map showing the location of a body of water",
+        "landmarks": [
+            "ocean"
+        ]
+    },
+    {
+        "tile_name": "Tokyo_Japan_10_910_407.png",
+        "caption": "Caption using beam search:\nan image of a blue sky with a plane flying over it\n\nCaptions using nucleus sampling:\na blue background with a white airplane flying over it\na blue background with a white airplane flying in the sky\na blue background with a white airplane flying over it",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Tokyo_Japan_10_910_405.png",
+        "caption": "Caption using beam search:\na map showing the location of a city in spain\n\nCaptions using nucleus sampling:\na map showing the location of a city in spain\na map showing the location of a city in spain\na map showing the location of a city in spain",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Tokyo_Japan_10_910_406.png",
+        "caption": "Caption using beam search:\nan image of a plane flying over a blue sky\n\nCaptions using nucleus sampling:\na plane flying over a blue sky\na blue background with a plane flying in the sky\na plane flying over a blue sky",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Sydney_Australia_10_942_618.png",
+        "caption": "Caption using beam search:\nan image of a blue sky with a plane flying over it\n\nCaptions using nucleus sampling:\na blue background with a white airplane flying in the sky\na blue background with a white airplane flying in the sky\na blue background with a white airplane flying in the sky",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Taj_Mahal_India_10_733_431.png",
+        "caption": "Caption using beam search:\na map showing the location of a river in a city\n\nCaptions using nucleus sampling:\na map showing the location of a river in a city\na map showing the location of a river in a city\na map showing the location of a river in a city",
+        "landmarks": [
+            "river"
+        ]
+    },
+    {
+        "tile_name": "Sydney_Australia_10_943_615.png",
+        "caption": "Caption using beam search:\nan image of a blue sky with a plane flying over it\n\nCaptions using nucleus sampling:\na blue background with a white airplane flying in the sky\na blue background with a white airplane flying in the sky\na blue sky with a white airplane flying over it",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Sydney_Australia_10_943_618.png",
+        "caption": "Caption using beam search:\nan image of a blue sky with a plane flying over it\n\nCaptions using nucleus sampling:\na blue background with a white airplane flying in the sky\na blue background with a white airplane flying in the sky\na blue sky with a plane flying over it",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Sydney_Australia_10_943_617.png",
+        "caption": "Caption using beam search:\nan image of a blue sky with a plane flying over it\n\nCaptions using nucleus sampling:\na blue background with a white airplane flying over it\na blue background with a plane flying over it\na blue background with a white airplane flying over it",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Sydney_Australia_10_943_614.png",
+        "caption": "Caption using beam search:\nan image of a map with a blue background\n\nCaptions using nucleus sampling:\na blue map with a person on it\na blue map with a white arrow on it\na blue map with a person in the middle of it",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Taj_Mahal_India_10_733_432.png",
+        "caption": "Caption using beam search:\na map showing the location of a city\n\nCaptions using nucleus sampling:\na map showing the location of a city\na map showing the location of an area\nmap of sandhya in hyderabad, uttar pradesh",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Sydney_Australia_10_943_616.png",
+        "caption": "Caption using beam search:\nan image of a blue sky with a plane flying over it\n\nCaptions using nucleus sampling:\na blue background with a white airplane flying in the sky\na blue background with a white airplane flying in the sky\na blue background with a white airplane flying over it",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Taj_Mahal_India_10_734_435.png",
+        "caption": "Caption using beam search:\na map showing the location of a city in pakistan\n\nCaptions using nucleus sampling:\na map showing the location of a city\na map showing the location of jalpaiguri\na map showing the location of khajuraho",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Taj_Mahal_India_10_734_433.png",
+        "caption": "Caption using beam search:\na map showing the location of a river\n\nCaptions using nucleus sampling:\na map showing the location of a river\na map showing the location of a river\na map showing the location of a river",
+        "landmarks": [
+            "river"
+        ]
+    },
+    {
+        "tile_name": "Taj_Mahal_India_10_733_435.png",
+        "caption": "Caption using beam search:\na map showing the location of a lake\n\nCaptions using nucleus sampling:\na map showing the location of a lake\na map showing the location of a lake\na map showing the location of a lake",
+        "landmarks": [
+            "lake"
+        ]
+    },
+    {
+        "tile_name": "Taj_Mahal_India_10_734_434.png",
+        "caption": "Caption using beam search:\na map showing the location of cyvilor\n\nCaptions using nucleus sampling:\na map showing the location of cyvilor\na map showing the location of cyvilor\na map of cyvilor, a city in afghanistan",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Taj_Mahal_India_10_734_431.png",
+        "caption": "Caption using beam search:\na map showing the location of a city\n\nCaptions using nucleus sampling:\na map showing the location of a city\na map showing the location of a city\na map showing the location of a city",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Taj_Mahal_India_10_733_433.png",
+        "caption": "Caption using beam search:\na map showing the location of a river\n\nCaptions using nucleus sampling:\na map showing the location of a river\na map showing the location of a river\na map showing the location of a river",
+        "landmarks": [
+            "river"
+        ]
+    },
+    {
+        "tile_name": "Taj_Mahal_India_10_733_434.png",
+        "caption": "Caption using beam search:\na map showing the location of a lake\n\nCaptions using nucleus sampling:\na map showing the location of a lake\na map showing the location of a lake\na map showing the location of a lake",
+        "landmarks": [
+            "lake"
+        ]
+    },
+    {
+        "tile_name": "Taj_Mahal_India_10_734_432.png",
+        "caption": "Caption using beam search:\na map showing the location of rajasthan\n\nCaptions using nucleus sampling:\na map showing the location of rajasthan\na map of rajasthan showing the location of rajasthan\na map showing the location of rajasthan",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Los_Angeles_USA_10_175_409.png",
+        "caption": "Caption using beam search:\na map showing the location of los angeles\n\nCaptions using nucleus sampling:\na map showing the location of los angeles\nmap of los angeles\na map showing the location of los angeles",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Los_Angeles_USA_10_175_410.png",
+        "caption": "Caption using beam search:\na map showing the location of a boat\n\nCaptions using nucleus sampling:\na map showing the location of a boat\na map showing the location of a boat\na map showing the location of a boat",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Los_Angeles_USA_10_175_411.png",
+        "caption": "Caption using beam search:\na map showing the location of hawaii\n\nCaptions using nucleus sampling:\na map showing the location of hawaii\na map showing the location of hawaii\na map showing the location of hawaii",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Los_Angeles_USA_10_175_412.png",
+        "caption": "Caption using beam search:\na map showing the location of a beach\n\nCaptions using nucleus sampling:\na map showing the location of a beach\na map showing the location of a beach\na map showing the location of the gulf of mexico",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Los_Angeles_USA_10_176_408.png",
+        "caption": "Caption using beam search:\na map showing the location of los angeles\n\nCaptions using nucleus sampling:\na map showing the location of los angeles\na map showing the location of los angeles\nmap of los angeles california",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Los_Angeles_USA_10_175_408.png",
+        "caption": "Caption using beam search:\na map showing the location of los angeles\n\nCaptions using nucleus sampling:\na map showing the location of los angeles\na map showing the location of los angeles\na map showing the location of los angeles",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Los_Angeles_USA_10_176_412.png",
+        "caption": "Caption using beam search:\na blue background with a man in a blue shirt\n\nCaptions using nucleus sampling:\na blue background with a man in a blue shirt\na blue background with a giraffe in the foreground\na blue background with an image of a giraffe",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Moscow_Russia_10_619_322.png",
+        "caption": "Caption using beam search:\na map showing the location of a town\n\nCaptions using nucleus sampling:\na map showing the location of a town\na map showing the location of a town\na map showing the location of a town",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Moscow_Russia_10_619_321.png",
+        "caption": "Caption using beam search:\na map showing the location of a city in poland\n\nCaptions using nucleus sampling:\na map of the location of a city in poland\na map showing the location of a city in poland\na map of the location of a city",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Los_Angeles_USA_10_176_410.png",
+        "caption": "Caption using beam search:\na map showing the location of a beach in california\n\nCaptions using nucleus sampling:\na map showing the location of a beach in california\na map showing the location of a beach in los angeles\na map showing the location of a beach in california",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Los_Angeles_USA_10_176_409.png",
+        "caption": "Caption using beam search:\na map showing the location of los angeles\n\nCaptions using nucleus sampling:\na map of los angeles is shown\nmap of los angeles california\nmap of los angeles",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Los_Angeles_USA_10_176_411.png",
+        "caption": "Caption using beam search:\na blue background with a line drawn on it\n\nCaptions using nucleus sampling:\na blue background with a line drawn on it\na blue map with a line drawn on it\na blue background with a line drawn on it",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Moscow_Russia_10_619_323.png",
+        "caption": "Caption using beam search:\na map showing the location of a town\n\nCaptions using nucleus sampling:\na map showing the location of a town\na map showing the location of a town\na map showing the location of a town",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Moscow_Russia_10_619_320.png",
+        "caption": "Caption using beam search:\na map showing the location of moscow\n\nCaptions using nucleus sampling:\na map of moscow showing the location of a river\na map showing the location of moscow\na map of moscow with a river in the middle",
+        "landmarks": [
+            "river"
+        ]
+    },
+    {
+        "tile_name": "Sahara_Desert_Africa_10_512_439.png",
+        "caption": "Caption using beam search:\nan image of a plane flying over a white background\n\nCaptions using nucleus sampling:\na white airplane flying over a white background\na white background with a plane flying over it\na white airplane flying over a white background",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Moscow_Russia_10_619_324.png",
+        "caption": "Caption using beam search:\na map showing the location of a river\n\nCaptions using nucleus sampling:\na map showing the location of a river\na map showing the location of a river\na map showing the location of a river",
+        "landmarks": [
+            "river"
+        ]
+    },
+    {
+        "tile_name": "Moscow_Russia_10_620_320.png",
+        "caption": "Caption using beam search:\na map showing the location of a city in poland\n\nCaptions using nucleus sampling:\na map of poland showing the location of a city\na map showing the location of a city in poland\na map showing the location of a city in poland",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Sahara_Desert_Africa_10_512_438.png",
+        "caption": "Caption using beam search:\nan image of a plane flying over a white background\n\nCaptions using nucleus sampling:\na white background with a plane flying over it\na white airplane flying over a white background\na picture of a plane flying over a white background",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Moscow_Russia_10_620_323.png",
+        "caption": "Caption using beam search:\na map showing the location of a town\n\nCaptions using nucleus sampling:\na map of the location of a small town in wilkes-barre, pennsylvania\na map showing the location of a town\na map of the location of a small town",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Moscow_Russia_10_620_321.png",
+        "caption": "Caption using beam search:\na map showing the location of a city\n\nCaptions using nucleus sampling:\na map showing the location of a city\na map showing the location of a city\na map of the city of odessa, ukraine",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Moscow_Russia_10_620_322.png",
+        "caption": "Caption using beam search:\na map showing the location of a town in poland\n\nCaptions using nucleus sampling:\na map showing the location of a town in poland\na map showing the location of a town in poland\na map showing the location of a village in poland",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Moscow_Russia_10_620_324.png",
+        "caption": "Caption using beam search:\na map showing the location of a city\n\nCaptions using nucleus sampling:\na map showing the location of a city\na map showing the location of a city\na map showing the location of a city",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Sahara_Desert_Africa_10_513_440.png",
+        "caption": "Caption using beam search:\nan image of a plane flying in the sky\n\nCaptions using nucleus sampling:\na white plane flying over a white background\na drawing of a plane flying in the sky\na white plane flying over a white background",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Sahara_Desert_Africa_10_512_440.png",
+        "caption": "Caption using beam search:\na map showing the location of a boat\n\nCaptions using nucleus sampling:\na map showing the location of a boat\na map showing the location of a boat\na map showing the location of a boat",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Sahara_Desert_Africa_10_513_439.png",
+        "caption": "Caption using beam search:\na map with a yellow line on it\n\nCaptions using nucleus sampling:\na map with a yellow line on it\na map with a yellow line on it\na map with a yellow line on it",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Sahara_Desert_Africa_10_513_438.png",
+        "caption": "Caption using beam search:\na map showing the location of a river\n\nCaptions using nucleus sampling:\na map showing the location of a river\na map showing the location of a river\na map showing the location of a river",
+        "landmarks": [
+            "river"
+        ]
+    },
+    {
+        "tile_name": "Sahara_Desert_Africa_10_513_441.png",
+        "caption": "Caption using beam search:\na map showing the location of a boat\n\nCaptions using nucleus sampling:\na map showing the location of a lake\na map showing the location of a boat\na map showing the location of a boat",
+        "landmarks": [
+            "lake"
+        ]
+    },
+    {
+        "tile_name": "Sahara_Desert_Africa_10_513_442.png",
+        "caption": "Caption using beam search:\na map showing the location of a boat\n\nCaptions using nucleus sampling:\na map showing the location of a boat\na map showing the location of a boat\na map showing the location of a boat",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Sahara_Desert_Africa_10_512_441.png",
+        "caption": "Caption using beam search:\na map showing the location of a boat\n\nCaptions using nucleus sampling:\na map showing the location of a boat\na map showing the location of a boat\na map showing the location of a fishing boat",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Sahara_Desert_Africa_10_512_442.png",
+        "caption": "Caption using beam search:\nan image of a plane flying over a white background\n\nCaptions using nucleus sampling:\na white plane flying over a white background\na white background with a plane flying in the sky\na white airplane flying over a white background",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Mexico_City_Mexico_10_230_456.png",
+        "caption": "Caption using beam search:\na map of santa fe, california\n\nCaptions using nucleus sampling:\na map showing the location of santa fe\na map showing the location of santa monica, california\na map showing the location of santa cruz, california",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Mexico_City_Mexico_10_231_455.png",
+        "caption": "Caption using beam search:\na map showing the location of a mountain in mexico\n\nCaptions using nucleus sampling:\na map showing the location of a mountain in mexico\na map showing the location of a mountain in mexico\na map showing the location of a mountain in mexico",
+        "landmarks": [
+            "mountain"
+        ]
+    },
+    {
+        "tile_name": "Mexico_City_Mexico_10_230_459.png",
+        "caption": "Caption using beam search:\na map showing the location of a river\n\nCaptions using nucleus sampling:\na map showing the location of a river\na map showing the location of a river\na map showing the location of a river",
+        "landmarks": [
+            "river"
+        ]
+    },
+    {
+        "tile_name": "Mexico_City_Mexico_10_230_457.png",
+        "caption": "Caption using beam search:\na map showing the location of a city in mexico\n\nCaptions using nucleus sampling:\na map showing the location of a city in mexico\na map showing the location of a city in mexico\na map showing the location of guadalajara, mexico",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Mexico_City_Mexico_10_230_458.png",
+        "caption": "Caption using beam search:\na map showing the location of a mountain\n\nCaptions using nucleus sampling:\na map showing the location of a mountain\na map showing the location of a mountain\na map showing the location of a mountain",
+        "landmarks": [
+            "mountain"
+        ]
+    },
+    {
+        "tile_name": "Mexico_City_Mexico_10_230_455.png",
+        "caption": "Caption using beam search:\na map showing the location of mexico city\n\nCaptions using nucleus sampling:\na map showing the location of mexico city\na map showing the location of mexico city\na map showing the location of mexico city",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Mexico_City_Mexico_10_231_456.png",
+        "caption": "Caption using beam search:\na map showing the location of volcanoes in ecuador\n\nCaptions using nucleus sampling:\na map showing the location of volcanoes in ecuador\na map showing the location of a volcano in ecuador\na map showing the location of volcanoes in ecuador",
+        "landmarks": []
+    },
+    {
+        "tile_name": "Mexico_City_Mexico_10_231_459.png",
+        "caption": "Caption using beam search:\na map showing the location of a river\n\nCaptions using nucleus sampling:\na map showing the location of a river\na map showing the location of a river\na map showing the location of a river",
+        "landmarks": [
+            "river"
+        ]
+    },
+    {
+        "tile_name": "Mexico_City_Mexico_10_231_458.png",
+        "caption": "Caption using beam search:\na map showing the location of a city in mexico\n\nCaptions using nucleus sampling:\na map showing the location of a city in chile\na map of the location of a river in chile\na map showing the location of a city in mexico",
+        "landmarks": [
+            "river"
+        ]
+    },
+    {
+        "tile_name": "Mexico_City_Mexico_10_231_457.png",
+        "caption": "Caption using beam search:\na map showing the location of a town in mexico\n\nCaptions using nucleus sampling:\na map showing the location of a town in mexico\na map showing the location of a town in mexico\na map showing the location of a city in mexico",
+        "landmarks": []
+    }
+]
