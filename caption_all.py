@@ -33,12 +33,15 @@ def main():
     # Setup device to use
     device = torch.device("cuda") if torch.cuda.is_available() else "cpu"
 
+    print(f"device is: {device}")
+
     # Load pretrained/finetuned BLIP2 captioning model
     # Use a smaller model variant if available
     try:
         model, vis_processors, _ = load_model_and_preprocess(
-            name="blip2_t5", model_type="pretrain_flant5xl", is_eval=True, device=device
+            name="blip2_opt", model_type="caption_coco_opt2.7b", is_eval=True, device=device
         )
+        print("model loaded")
     except RuntimeError as e:
         print(f"Failed to load model on GPU: {e}. Switching to CPU.")
         device = torch.device("cpu")
@@ -102,4 +105,5 @@ def main():
 
 
     print("Processing completed. Results saved to:", output_dir)
-
+if __name__ == "__main__":
+	main()
