@@ -69,15 +69,14 @@ def main():
             image = vis_processors["eval"](raw_image).unsqueeze(0).to(device)
 
             #Generate caption using beam search
-            caption = model.generate({"image": image})
-            beam_caption = f"Generated caption for {img_path} using beam search:"+ caption
-            print(f"Generated caption for {img_path} using beam search:", caption)
+            beam_caption = model.generate({"image": image})
+            print(f"Generated caption for {img_path} using beam search:", beam_caption)
 
 
             # Generate multiple captions using nucleus sampling
-            captions = model.generate({"image": image}, use_nucleus_sampling=True, num_captions=3)
-            print(f"Generated captions for {img_path} using nucleus sampling:", captions)
-            nucleus_captions = f"Generated captions for {img_path} using nucleus sampling: " + captions
+            nucleus_captions = model.generate({"image": image}, use_nucleus_sampling=True, num_captions=3)
+            print(f"Generated captions for {img_path} using nucleus sampling:", nucleus_captions)
+    
 
             results_dict[img_file] = (beam_caption,nucleus_captions)
             # Save the image and captions
@@ -86,16 +85,15 @@ def main():
 
             with open(os.path.join(output_dir, base_name + '.txt'), 'w') as f:
                 f.write("Caption using beam search:\n")
-                f.write(caption[0] + "\n\n")
+                f.write(beam_caption[0] + "\n\n")
                 f.write("Captions using nucleus sampling:\n")
-                for c in captions:
+                for c in nucleus_captions:
                     f.write(c + "\n")
 
         except Exception as e:
             print(f"Error processing {img_path}: {e}")
         
-        
-        if idx %500:
+        if idx %100 ==0:
             print(f"saving partial results up to image # {idx}")
             json_outpath = "json_results_" + str(idx) + ".json"
             with open(os.path.join(output_dir,json_outpath), 'w') as file:
