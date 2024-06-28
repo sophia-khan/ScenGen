@@ -2,6 +2,7 @@ import argparse
 import logging
 import json
 import os
+import time
 
 import torch
 from PIL import Image
@@ -57,6 +58,7 @@ def main():
     results_dict = {}
 
     #Iterate through each image file
+    start = time.time()
     for idx,img_file in enumerate(image_files):
         img_path = os.path.join(image_dir, img_file)
         try:
@@ -77,7 +79,7 @@ def main():
             print(f"Generated captions for {img_path} using nucleus sampling:", captions)
             nucleus_captions = f"Generated captions for {img_path} using nucleus sampling: " + captions
 
-
+            results_dict[img_file] = (beam_caption,nucleus_captions)
             # Save the image and captions
             base_name = os.path.basename(img_path)
             raw_image.save(os.path.join(output_dir, base_name))
@@ -91,14 +93,16 @@ def main():
 
         except Exception as e:
             print(f"Error processing {img_path}: {e}")
-        results_dict[img_file] = (beam_caption,nucleus_captions)
         
-        if idx %128:
+        
+        if idx %500:
             print(f"saving partial results up to image # {idx}")
             json_outpath = "json_results_" + str(idx) + ".json"
             with open(os.path.join(output_dir,json_outpath), 'w') as file:
                 json.dump(results_dict,file)
             
+            end = time.time()
+            print(f"Elapsed time since start: { end - start} seconds ")
 
 
     print("Processing completed. Results saved to:", output_dir)
