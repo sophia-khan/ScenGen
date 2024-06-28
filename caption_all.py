@@ -51,9 +51,6 @@ def main():
 
     print(vis_processors.keys())
 
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-
     #List all image files in the directory
     image_files = [f for f in os.listdir(image_dir) if f.lower().endswith(('.png', '.jpg', '.jpeg'))]
 
