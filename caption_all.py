@@ -99,7 +99,7 @@ def main():
         if idx %128:
             print(f"saving partial results up to image # {idx}")
             json_outpath = "json_results_" + str(idx) + ".json"
-            with open(os.path.join(output_dir,json_outpath)) as file:
+            with open(os.path.join(output_dir,json_outpath), 'w') as file:
                 json.dump(results_dict,file)
             
 
