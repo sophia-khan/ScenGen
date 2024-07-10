@@ -36,7 +36,7 @@ print(f"Model and processor loaded in {time.time() - start_time:.2f} seconds")
 features = ["mountain", "river", "desert", "forest", "lake", "ocean", "grass", "sand", 
             "freeway", "reservoir", "railroad", "canal", "waterbody", "plant", "elevation", 
             "contour", "crossroad", "waves", "snow", "city", "town", "trail", "highway", "route",
-            "region", "terrain", "tree", "road", "water"]
+            "region", "terrain", "tree", "road", "water", "topographic"]
 confidence_threshold = 0.8
 batch_size = 8  # Number of images to process in each batch
 output_json_path = 'detection_results.json'
