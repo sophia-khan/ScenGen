@@ -33,8 +33,11 @@ model = GroundingDinoForObjectDetection.from_pretrained("IDEA-Research/grounding
 print(f"Model and processor loaded in {time.time() - start_time:.2f} seconds")
 
 # Define object detection parameters
-features = ["mountain", "river", "desert", "forest", "lake", "ocean", "grass"]
-confidence_threshold = 0.6
+features = ["mountain", "river", "desert", "forest", "lake", "ocean", "grass", "sand", 
+            "freeway", "reservoir", "railroad", "canal", "waterbody", "plant", "elevation", 
+            "contour", "crossroad", "waves", "snow", "city", "town", "trail", "highway", "route",
+            "region", "terrain", "tree", "road", "water"]
+confidence_threshold = 0.8
 batch_size = 8  # Number of images to process in each batch
 output_json_path = 'detection_results.json'
 
