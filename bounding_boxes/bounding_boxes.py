@@ -1,4 +1,3 @@
-import zipfile
 import os
 import json
 import torch
@@ -10,18 +9,6 @@ from transformers import AutoProcessor, GroundingDinoForObjectDetection
 
 def ensure_packages_installed():
     os.system('pip install transformers torch torchvision Pillow matplotlib tqdm')
-
-def extract_images(zip_file_path, extract_folder_path):
-    # Create the extract folder if it doesn't exist
-    if not os.path.exists(extract_folder_path):
-        os.makedirs(extract_folder_path)
-
-    # Unzip the images
-    print("Extracting images...")
-    start_time = time.time()  # Start timestamp
-    with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
-        zip_ref.extractall(extract_folder_path)
-    print(f"Extraction completed in {time.time() - start_time:.2f} seconds")
 
 def load_model_and_processor():
     print("Loading model and processor...")
@@ -81,8 +68,7 @@ def process_images(image_paths, processor, model, features, confidence_threshold
 
 def main():
     parser = argparse.ArgumentParser(description="Process images for object detection")
-    parser.add_argument('--zip_file_path', type=str, required=True, help='Path to the zip file containing images')
-    parser.add_argument('--extract_folder_path', type=str, required=True, help='Path to the folder to extract images to')
+    parser.add_argument('--image_folder_path', type=str, required=True, help='Path to the folder containing images')
     parser.add_argument('--confidence_threshold', type=float, default=0.8, help='Confidence threshold for object detection')
     parser.add_argument('--batch_size', type=int, default=8, help='Number of images to process in each batch')
     parser.add_argument('--output_json_path', type=str, default='detection_results.json', help='Path to save the detection results JSON file')
@@ -90,9 +76,6 @@ def main():
     args = parser.parse_args()
     
     ensure_packages_installed()
-    
-    # Extract images from the zip file
-    extract_images(args.zip_file_path, args.extract_folder_path)
     
     # Load the model and processor
     processor, model = load_model_and_processor()
@@ -104,9 +87,8 @@ def main():
                 "region", "terrain", "tree", "road", "water", "topographic"]
     
     # Count total number of images to process
-    total_images = sum(len(files) for _, _, files in os.walk(args.extract_folder_path) if files)
+    total_images = sum(len(files) for _, _, files in os.walk(args.image_folder_path) if files)
     
- 
     estimated_runtime_per_image = 10  
     estimated_total_runtime = total_images * estimated_runtime_per_image
     
@@ -120,10 +102,10 @@ def main():
     # Load previously saved data if it exists
     if os.path.exists(args.output_json_path):
         with open(args.output_json_path, 'r') as json_file:
-            output_data = json_file.load(json_file)
+            output_data = json.load(json_file)
     
     all_image_paths = []
-    for root, _, files in os.walk(args.extract_folder_path):
+    for root, _, files in os.walk(args.image_folder_path):
         for file in files:
             if file.endswith('.png') and not file.startswith('._') and '__MACOSX' not in root:
                 all_image_paths.append(os.path.join(root, file))
