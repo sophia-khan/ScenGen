@@ -86,14 +86,6 @@ def main():
                 "contour", "crossroad", "waves", "snow", "city", "town", "trail", "highway", "route",
                 "region", "terrain", "tree", "road", "water", "topographic"]
     
-    # Count total number of images to process
-    total_images = sum(len(files) for _, _, files in os.walk(args.image_folder_path) if files)
-    
-    estimated_runtime_per_image = 10  
-    estimated_total_runtime = total_images * estimated_runtime_per_image
-    
-    print(f"Estimated total runtime: {estimated_total_runtime} seconds ({estimated_total_runtime / 60:.2f} minutes)")
-    
     # Process all images in batches and save results in increments
     print("Processing images...")
     start_time = time.time()  # Start timestamp
@@ -115,10 +107,14 @@ def main():
         batch_results = process_images(batch_image_paths, processor, model, features, args.confidence_threshold)
         if batch_results:
             output_data.update(batch_results)
-            # Save results in increments
-            with open(args.output_json_path, 'w') as json_file:
-                json.dump(output_data, json_file, indent=4)
-        print(f"Processed batch {i // args.batch_size + 1} of {len(all_image_paths) // args.batch_size + 1}")
+            # Save results every 20 batches
+            if (i // args.batch_size + 1) % 20 == 0:
+                start_idx = i
+                end_idx = min(i + 20 * args.batch_size, len(all_image_paths)) - 1
+                json_file_name = f"results_json_{start_idx}_{end_idx}.json"
+                with open(json_file_name, 'w') as json_file:
+                    json.dump(output_data, json_file, indent=4)
+                print(f"Saved results to {json_file_name}")
     
     print(f"Processing completed in {time.time() - start_time:.2f} seconds")
     
