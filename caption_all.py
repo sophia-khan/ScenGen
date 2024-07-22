@@ -25,7 +25,8 @@ def main():
     parser.add_argument('--img_folder_path', type=str, required=True, help='Path to the folder containing images.')
     parser.add_argument('--caption_folder_path', type=str, required=True, help='Path to the folder to write captions to.')
     args = parser.parse_args()
-
+    
+    
     image_dir = args.img_folder_path
     output_dir  = args.caption_folder_path
     # Clear GPU memory before loading the model
@@ -54,12 +55,16 @@ def main():
 
     #List all image files in the directory
     image_files = [f for f in os.listdir(image_dir) if f.lower().endswith(('.png', '.jpg', '.jpeg'))]
-
+    
+    print(f"{len(image_files)} in the folder")
     results_dict = {}
 
     #Iterate through each image file
     start = time.time()
     for idx,img_file in enumerate(image_files):
+        if idx<= 28601:
+            continue
+        print(f"starting image number: {idx} out of {len(image_files)}")
         img_path = os.path.join(image_dir, img_file)
         try:
             raw_image = Image.open(img_path).convert('RGB')
@@ -70,18 +75,18 @@ def main():
 
             #Generate caption using beam search
             beam_caption = model.generate({"image": image})
-            print(f"Generated caption for {img_path} using beam search:", beam_caption)
+            #print(f"Generated caption for {img_path} using beam search:", beam_caption)
 
 
             # Generate multiple captions using nucleus sampling
             nucleus_captions = model.generate({"image": image}, use_nucleus_sampling=True, num_captions=3)
-            print(f"Generated captions for {img_path} using nucleus sampling:", nucleus_captions)
+            #print(f"Generated captions for {img_path} using nucleus sampling:", nucleus_captions)
     
 
             results_dict[img_file] = (beam_caption,nucleus_captions)
             # Save the image and captions
             base_name = os.path.basename(img_path)
-            raw_image.save(os.path.join(output_dir, base_name))
+            #raw_image.save(os.path.join(output_dir, base_name))
 
             with open(os.path.join(output_dir, base_name + '.txt'), 'w') as f:
                 f.write("Caption using beam search:\n")
