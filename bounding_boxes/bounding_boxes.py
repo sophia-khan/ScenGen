@@ -92,9 +92,9 @@ def main():
     output_data = {}
     
     # Load previously saved data if it exists
-    if os.path.exists(args.output_json_path):
-        with open(args.output_json_path, 'r') as json_file:
-            output_data = json.load(json_file)
+    #if os.path.exists(args.output_json_path):
+        #with open(args.output_json_path, 'r') as json_file:
+            #output_data = json.load(json_file)
     
     all_image_paths = []
     for root, _, files in os.walk(args.image_folder_path):
@@ -122,7 +122,8 @@ def main():
     # Load JSON data and print
     print("Loading JSON data...")
     start_time = time.time()  # Start timestamp
-    with open(args.output_json_path, 'r') as json_file:
+    json_path_final = os.path.join(args.output_json_path, "final.json")
+    with open(json_path_final, 'r') as json_file:
         data = json.load(json_file)
     print(f"JSON data loaded in {time.time() - start_time:.2f} seconds")
     
