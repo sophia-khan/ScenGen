@@ -108,12 +108,12 @@ def main():
         if batch_results:
             output_data.update(batch_results)
             # Save results every 20 batches
-            if (i // args.batch_size + 1) % 20 == 0:
+            if (i // args.batch_size + 1) % 5 == 0:
                 start_idx = i
                 end_idx = min(i + 20 * args.batch_size, len(all_image_paths)) - 1
                 json_file_name = f"results_json_{start_idx}_{end_idx}.json"
-                with open(json_file_name, 'w') as json_file:
-                    json_path = os.path.join(args.output_json_path, json_file_name)
+                json_path = os.path.join(args.output_json_path, json_file_name)
+                with open(json_path, 'w') as json_file:
                     json.dump(output_data, json_path, indent=4)
                 print(f"Saved results to {json_path}")
     
