@@ -124,7 +124,7 @@ def main():
     start_time = time.time()  # Start timestamp
     json_path_final = os.path.join(args.output_json_path, "final.json")
     with open(json_path_final, 'r') as json_file:
-        data = json.load(json_file)
+        data = json.load(output_data,json_file)
     print(f"JSON data loaded in {time.time() - start_time:.2f} seconds")
     
     # Print loaded data
