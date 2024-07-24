@@ -114,7 +114,7 @@ def main():
                 json_file_name = f"results_json_{start_idx}_{end_idx}.json"
                 json_path = os.path.join(args.output_json_path, json_file_name)
                 with open(json_path, 'w') as json_file:
-                    json.dump(output_data, json_path, indent=4)
+                    json.dump(output_data, json_file, indent=4)
                 print(f"Saved results to {json_path}")
     
     print(f"Processing completed in {time.time() - start_time:.2f} seconds")
