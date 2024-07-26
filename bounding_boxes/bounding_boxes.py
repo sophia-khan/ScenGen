@@ -1,5 +1,7 @@
 import os
 import json
+import sys
+
 import torch
 import time
 import argparse
@@ -72,10 +74,26 @@ def main():
     parser.add_argument('--confidence_threshold', type=float, default=0.8, help='Confidence threshold for object detection')
     parser.add_argument('--batch_size', type=int, default=8, help='Number of images to process in each batch')
     parser.add_argument('--output_json_path', type=str, default='detection_results.json', help='Path to save the detection results JSON file')
-    
+    parser.add_argument('--resume_json_path', type=str, default=None, help='Path to json containing end_idx')
     args = parser.parse_args()
     
     ensure_packages_installed()
+
+    slurm_array_task_id = sys.argv[1]
+    print(f"slurm_array_task_id: {slurm_array_task_id}")
+    
+    end_idx = args.resume_json_path
+    if end_idx:
+        with open(args.resume_json_path, 'r') as file:
+            data = json.load(file)
+        for item in data:
+            if item["SLURM_ARRAY_TASK_ID"] == slurm_array_task_id:
+                end_idx = item.get('end_idx')
+            else:
+                end_idx = 0
+
+
+    
     
     # Load the model and processor
     processor, model = load_model_and_processor()
@@ -102,7 +120,7 @@ def main():
             if file.endswith('.png') and not file.startswith('._') and '__MACOSX' not in root:
                 all_image_paths.append(os.path.join(root, file))
     
-    for i in tqdm(range(0, len(all_image_paths), args.batch_size), desc="Processing Batches", unit="batch"):
+    for i in tqdm(range(end_idx, len(all_image_paths), args.batch_size), desc="Processing Batches", unit="batch"):
         batch_image_paths = all_image_paths[i:i + args.batch_size]
         batch_results = process_images(batch_image_paths, processor, model, features, args.confidence_threshold)
         if batch_results:
