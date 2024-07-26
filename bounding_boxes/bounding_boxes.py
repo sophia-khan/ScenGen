@@ -66,7 +66,8 @@ def process_images(image_paths, processor, model, features, confidence_threshold
                     batch_results[valid_image_paths[idx]] = []
                 batch_results[valid_image_paths[idx]].append(filtered_results)
     
-    return batch_results
+    return batch_results 
+
 
 def main():
     parser = argparse.ArgumentParser(description="Process images for object detection")
@@ -75,23 +76,27 @@ def main():
     parser.add_argument('--batch_size', type=int, default=8, help='Number of images to process in each batch')
     parser.add_argument('--output_json_path', type=str, default='detection_results.json', help='Path to save the detection results JSON file')
     parser.add_argument('--resume_json_path', type=str, default=None, help='Path to json containing end_idx')
+    parser.add_argument('--slurm_task_id', type=int, required=True, help='SLURM array task ID')
+
     args = parser.parse_args()
     
     ensure_packages_installed()
 
-    slurm_array_task_id = sys.argv[1]
+    #extract slurm task array id
+    slurm_array_task_id = args.slurm_task_id
     print(f"slurm_array_task_id: {slurm_array_task_id}")
     
     end_idx = args.resume_json_path
-    if end_idx:
+    if end_idx is not None:
         with open(args.resume_json_path, 'r') as file:
             data = json.load(file)
         for item in data:
             if item["SLURM_ARRAY_TASK_ID"] == slurm_array_task_id:
                 end_idx = item.get('end_idx')
-            else:
-                end_idx = 0
+            
+    else:
 
+        end_idx = 0
 
     
     
