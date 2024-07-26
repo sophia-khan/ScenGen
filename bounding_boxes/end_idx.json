@@ -1,31 +1,31 @@
 [
   {
     "SLURM_ARRAY_TASK_ID": 1,
-    "end_idx": 416
+    "end_idx": 1000
   },
   {
     "SLURM_ARRAY_TASK_ID": 2,
-    "end_idx": 395
+    "end_idx": 998
   },
   {
     "SLURM_ARRAY_TASK_ID": 3,
-    "end_idx": 675
+    "end_idx": 1000
   },
   {
     "SLURM_ARRAY_TASK_ID": 4,
-    "end_idx": 495
+    "end_idx": 1000
   },
   {
     "SLURM_ARRAY_TASK_ID": 5,
-    "end_idx": 495
+    "end_idx": 1000
   },
   {
     "SLURM_ARRAY_TASK_ID": 6,
-    "end_idx": 515
+    "end_idx": 1000
   },
   {
     "SLURM_ARRAY_TASK_ID": 7,
-    "end_idx": 555
+    "end_idx": 1000
   },
   {
     "SLURM_ARRAY_TASK_ID": 8,
@@ -34,5 +34,10 @@
   {
     "SLURM_ARRAY_TASK_ID": 9,
     "end_idx": 213
-  }
+  },
+  {
+  "SLURM_ARRAY_TASK_ID": 10,
+    "end_idx" : 200
+}
+
 ]
