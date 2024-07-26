@@ -1,0 +1,38 @@
+{
+  'SLURM_ARRAY_TASK_ID': 1,
+  {
+    end_idx: 416
+  },
+  'SLURM_ARRAY_TASK_ID': 2,
+  {
+    end_idx: 395
+  },
+  'SLURM_ARRAY_TASK_ID': 3,
+  {
+    end_idx: 675
+  },
+  'SLURM_ARRAY_TASK_ID': 4,
+  {
+    end_idx: 495
+  },
+  'SLURM_ARRAY_TASK_ID': 5,
+  {
+    end_idx: 495
+  },
+  'SLURM_ARRAY_TASK_ID': 6,
+  {
+    end_idx: 515
+  },
+  'SLURM_ARRAY_TASK_ID': 7,
+  {
+    end_idx: 555
+  },
+  'SLURM_ARRAY_TASK_ID': 8,
+  {
+    end_idx: 432
+  },
+  'SLURM_ARRAY_TASK_ID': 9,
+  {
+    end_idx: 213
+  }
+}
